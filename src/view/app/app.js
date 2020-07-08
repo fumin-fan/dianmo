@@ -72,6 +72,7 @@ export default function App(){
             let appExamplePrev=document.getElementById("app_example_prev");
             let appExampleNext=document.getElementById("app_example_next");
             let arr=[];
+            let timer = null;
             for(let i=0;i<appExampleLi.length;i++){
                 let oSpan=appExampleLi[i].children[0];
                 arr[i]={
@@ -82,12 +83,37 @@ export default function App(){
                         alpha:getStyle(oSpan,"opacity")
                 };
             }
-            appExamplePrev.onclick=function(){
+            timer = setInterval(function(){
                 arr.unshift(arr.pop());
+                toStyle();
+               
+            }, 2000);
+            appExamplePrev.addEventListener('mouseover', function(){
+                clearInterval(timer);
+            });
+            appExamplePrev.addEventListener('mouseout', function(){
+                timer = setInterval(function(){
+                    arr.push(arr.shift());
+                    toStyle(); 
+                }, 2000);
+            });
+            appExampleNext.addEventListener('mouseover', function(){
+                clearInterval(timer);
+            });
+            appExampleNext.addEventListener('mouseout', function(){
+                timer = setInterval(function(){
+                    arr.unshift(arr.pop());
+                    toStyle(); 
+                }, 2000);
+            });
+            appExamplePrev.onclick=function(){
+                clearInterval(timer);
+                arr.push(arr.shift());
                 toStyle();
             };
             appExampleNext.onclick=function(){
-                arr.push(arr.shift());
+                clearInterval(timer);
+                arr.unshift(arr.pop());
                 toStyle();
             };
             function toStyle(){

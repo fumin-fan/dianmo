@@ -15,7 +15,7 @@ export default function Form(props) {
                 选择您想要推广的地区<select id="area"><option defaultValue="">请选择</option></select>
             </label>
             <textarea placeholder="其他合作事宜："></textarea>
-            <input type="submit" defaultValue="提     交" />
+            <input type="button" defaultValue="提     交" />
         </form>
     );
 }

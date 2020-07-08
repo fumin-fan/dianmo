@@ -13,6 +13,7 @@ import dot from '../img/home/dot.png';
 import google_jpg from '../img/home/google.jpg';
 import google_png from '../img/home/google.png';
 import facebook from '../img/home/facebook.jpg';
+import facebook_png from '../img/home/facebook.png';
 import inmobi_jpg from '../img/home/inmobi.jpg';
 import inmobi_png from '../img/home/inmobi.png';
 import ucads_jpg from '../img/home/ucads.jpg';
@@ -209,7 +210,7 @@ useEffect( () =>{
                         <li>
                             <img src={facebook} alt="facebook_jpg" />
                             <div style={{display: "none"}} className="mask"></div>
-                            <Link to='/facebook'>Facebook</Link>
+                            <Link to='/facebook'><img src={facebook_png} alt="facebook_png" /></Link>
                         </li>
                         <li>
                             <img src={inmobi_jpg} alt="inmobi_jpg" />

@@ -68,6 +68,7 @@ export default function Game(){
             let gameExamplePrev=document.getElementById("game_example_prev");
             let gameExampleNext=document.getElementById("game_example_next");
             let arr=[];
+            let timer = null;
             for(let i=0;i<gameExampleLi.length;i++){
                 let oSpan=gameExampleLi[i].children[0];
                 arr[i]={
@@ -78,12 +79,36 @@ export default function Game(){
                         alpha:getStyle(oSpan,"opacity")
                 };
             }
-            gameExamplePrev.onclick=function(){
+             timer = setInterval(function(){
                 arr.unshift(arr.pop());
+                toStyle(); 
+            }, 2000);
+            gameExamplePrev.addEventListener('mouseover', function(){
+                clearInterval(timer);
+            });
+            gameExamplePrev.addEventListener('mouseout', function(){
+                timer = setInterval(function(){
+                    arr.push(arr.shift());
+                    toStyle(); 
+                }, 2000);
+            });
+            gameExampleNext.addEventListener('mouseover', function(){
+                clearInterval(timer);
+            });
+            gameExampleNext.addEventListener('mouseout', function(){
+                timer = setInterval(function(){
+                    arr.unshift(arr.pop());
+                    toStyle(); 
+                }, 2000);
+            });
+            gameExamplePrev.onclick=function(){
+                clearInterval(timer);
+                arr.push(arr.shift()); 
                 toStyle();
             };
             gameExampleNext.onclick=function(){
-                arr.push(arr.shift());
+                clearInterval(timer);
+                arr.unshift(arr.pop());
                 toStyle();
             };
             function toStyle(){

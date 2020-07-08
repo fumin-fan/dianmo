@@ -143,6 +143,7 @@ export default function Ecommerce(){
                                 backgroundImage:`url(${channel_1})`,
                                 backgroundPosition:`center center`,
                                 backgroundRepeat:`no-repeat`,
+                                backgroundSize:'80%'
                             }}
                         ></div>
                         <img src={trangle} alt="1" />
@@ -154,6 +155,7 @@ export default function Ecommerce(){
                                 backgroundImage:`url(${channel_2})`,
                                 backgroundPosition:`center center`,
                                 backgroundRepeat:`no-repeat`,
+                                backgroundSize:'80%'
                             }}
                         ></div>
                         <img src={trangle} alt="1" />
@@ -165,6 +167,7 @@ export default function Ecommerce(){
                                 backgroundImage:`url(${channel_3})`,
                                 backgroundPosition:`center center`,
                                 backgroundRepeat:`no-repeat`,
+                                backgroundSize:'80%'
                             }}
                         ></div>
                         <img src={trangle} alt="1" />
@@ -176,6 +179,7 @@ export default function Ecommerce(){
                                 backgroundImage:`url(${channel_4})`,
                                 backgroundPosition:`center center`,
                                 backgroundRepeat:`no-repeat`,
+                                backgroundSize:'80%'
                             }}
                         ></div>
                         <img src={trangle} alt="1" />
@@ -187,6 +191,7 @@ export default function Ecommerce(){
                                 backgroundImage:`url(${channel_5})`,
                                 backgroundPosition:`center center`,
                                 backgroundRepeat:`no-repeat`,
+                                backgroundSize:'80%'
                             }}
                         ></div>
                         <img src={trangle} alt="1" />
@@ -198,6 +203,7 @@ export default function Ecommerce(){
                                 backgroundImage:`url(${channel_6})`,
                                 backgroundPosition:`center center`,
                                 backgroundRepeat:`no-repeat`,
+                                backgroundSize:'80%'
                             }}
                         ></div>
                         <img src={trangle} alt="1" />
