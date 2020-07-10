@@ -32,7 +32,7 @@ export default function UcAds(){
                     <img src={ucads_power2} alt="1" />
                     <img src={ucads_power3} alt="1" />
                 </div>
-                <DianmoAd />
+                <DianmoAd ad='ucads' />
             </div>      
         </section>
     );

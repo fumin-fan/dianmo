@@ -1,11 +1,33 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import dianmo from './dianmo.png';
+import {Data} from './data';
 
-export default function DianmoAd(){
+function reducer(action) {
+    switch(action){
+        case 'facebook':
+            return Data[0].key;
+        case 'inmobi':
+            return Data[1].key;
+        case 'ucads':
+            return Data[2].key;
+        case 'tiktok':
+            return Data[3].key;
+        case 'toutiao':
+            return Data[4].key;
+        case 'google':
+            return Data[5].key;
+        default:
+            return '';
+    }
+}
+
+export default function DianmoAd(props){
+    const {ad} = props;
+    const key = reducer(ad);
     return (
         <div className="dianmo">
-                <h2>点摩广告：让Google营销更简单</h2>
+                <h2>点摩广告：让{key}营销更简单</h2>
                 <ol>
                     <li>
                         <div>
@@ -13,8 +35,8 @@ export default function DianmoAd(){
                             <p>了解您的产品、营销目的，分析目标受众</p>
                         </div>
                         <div>
-                            <h3>专业Google优化师</h3>
-                            <p>植根行业多年的Google优化师为您提供全程一对一广告优化服务</p>
+                            <h3>专业{key}优化师</h3>
+                            <p>植根行业多年的{key}优化师为您提供全程一对一广告优化服务</p>
                         </div>
                         <div>
                             <h3>广告计划</h3>
@@ -27,7 +49,7 @@ export default function DianmoAd(){
                     <li>
                         <div>
                             <h3>精准锁定用户</h3>
-                            <p>通过现有数据、网站流量、以及Google营销工具，来为您挑选极精准匹配的受众</p>
+                            <p>通过现有数据、网站流量、以及{key}营销工具，来为您挑选极精准匹配的受众</p>
                         </div>
                         <div>
                             <h3>跟踪&分析</h3>

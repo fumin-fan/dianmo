@@ -31,7 +31,7 @@ export default function Facebook(){
                     <img src={facebook_power1} alt="1" />
                     <img src={facebook_power2} alt="1" />
                 </div>
-                <DianmoAd />
+                <DianmoAd ad='facebook' />
             </div>      
         </section>
     );

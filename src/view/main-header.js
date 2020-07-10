@@ -62,6 +62,9 @@ function MainHeader(props) {
       <Menu.Item>
         <Link to='/jobs'>公司招聘</Link>
       </Menu.Item>
+      <Menu.Item>
+        <Link to='/about'>联系我们</Link>
+      </Menu.Item>
     </Menu>
   );
   const newsMenu = (
@@ -126,7 +129,7 @@ function MainHeader(props) {
                     </Menu.Item>
                     <Menu.Item key="5">
                       <Dropdown overlay={aboutUsMenu} placement="bottomLeft">
-                        <Button><Link to='/about'>联系我们</Link><DownOutlined /></Button>
+                        <Button><Link to='/about'>关于我们</Link><DownOutlined /></Button>
                       </Dropdown>
                       </Menu.Item>
                     <Menu.Item key="6">

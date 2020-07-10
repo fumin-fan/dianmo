@@ -28,7 +28,7 @@ export default function Tiktok(){
                     <h3>用今天的故事打动明天的客户</h3>
                     <img src={tiktok_power} alt="1" />
                 </div>
-                <DianmoAd />
+                <DianmoAd ad='tiktok' />
             </div>      
         </section>
     );

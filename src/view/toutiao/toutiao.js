@@ -114,7 +114,7 @@ export default function Toutiao(){
                         </label>
                     </div>
                 </div>
-                <DianmoAd />
+                <DianmoAd ad='toutiao' />
             </div>      
         </section>
     );

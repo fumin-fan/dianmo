@@ -155,7 +155,7 @@ export default function Google(){
                         </li>
                     </ul>
                 </div>
-                <DianmoAd />
+                <DianmoAd ad='google' />
             </div>   
         </section>
     );

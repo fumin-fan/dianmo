@@ -70,7 +70,7 @@ export default function Inmobi(){
                         </ul>
                     </div>
                 </div>
-                <DianmoAd />
+                <DianmoAd ad='inmobi' />
             </div>    
         </section>
     );

@@ -1859,7 +1859,7 @@ body {
 }
 .ecommerce_channel dt {
   width: 2.04166667rem;
-  height: 2.35277778rem;
+  height: 2.36666667rem;
   float: left;
   position: relative;
   overflow: hidden;
@@ -1874,10 +1874,10 @@ body {
   width: 100%;
 }
 .ecommerce_channel dd {
-  width: 1.25rem;
+  width: 1.11111111rem;
+  height: 0.39444444rem;
   float: right;
   position: relative;
-  margin-bottom: 0.08333333rem;
 }
 .ecommerce_channel dd div {
   width: 0.22222222rem;

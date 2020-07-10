@@ -1,6 +1,6 @@
 export  const Data =[
 {
-    key:'facebook',
+    key:'Facebook',
     data:{
         head:'领先的海外社交媒体广告平台',
         brief:['海量用户', '精准推荐', '核心定位', '更高ROI'],
@@ -14,7 +14,7 @@ export  const Data =[
     }
 },
 {
-    key:'inmobi',
+    key:'Inmobi',
     data:{
         head:'品效协同 智能触达',
         brief:['海量用户', '精准推送', '多元定向', '再营销'],
@@ -28,7 +28,7 @@ export  const Data =[
     }
 },
 {
-    key:'ucads',
+    key:'Uc Ads',
     data:{
         head:'专注双印市场，媒体反应迅速',
         brief:['海量用户', '事件联动', '产品矩阵', '文娱内容'],
@@ -42,7 +42,7 @@ export  const Data =[
     }
 },
 {
-    key:'tiktok',
+    key:'Tiktok',
     data:{
         head:'引领短视频潮流，汇聚海量流量、数据、优质内容',
         brief:['海量用户', '精准推荐', '增长迅速', '多元聚合'],
@@ -56,7 +56,7 @@ export  const Data =[
     }
 },
 {
-    key:'toutiao',
+    key:'头条',
     data:{
         head:'海 量 流 量   多 元 聚 合',
         brief:['海量用户', '精准推送', '一站式服务', '生态共赢'],
@@ -68,5 +68,8 @@ export  const Data =[
                 ],
         customized:'定制专属头条营销方案'
     }
+},
+{
+    key:'Google'
 }
 ]
