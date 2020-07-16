@@ -197,7 +197,7 @@ body {
   left: 0;
 }
 .next {
-  right: 0;
+  right: 0.04722222rem;
 }
 .on {
   font-weight: bold;
@@ -1012,7 +1012,7 @@ body {
 }
 .branding_wrap .branding_line {
   width: 0.12222222rem;
-  height: 0.00833333rem;
+  height: 3px;
   background-color: #0066a0;
   position: absolute;
   top: 0.33333333rem;
@@ -1069,8 +1069,16 @@ body {
   font-size: 0.1rem;
   color: #0066a0;
 }
-.branding_wrap li:nth-of-type(1) dd p {
+.branding_wrap li:nth-of-type(1) dd p:nth-of-type(1) {
   height: 0.1rem;
+  line-height: 0.1rem;
+  font-size: 0.05rem;
+  color: #0066a0;
+  position: relative;
+  letter-spacing: 0.00277778rem;
+}
+.branding_wrap li:nth-of-type(1) dd p:nth-of-type(2) {
+  height: 0.2rem;
   line-height: 0.1rem;
   font-size: 0.05rem;
   color: #0066a0;
@@ -1096,13 +1104,10 @@ body {
   line-height: 0.10555556rem;
   text-align: center;
   letter-spacing: 0.01111111rem;
-  margin-top: 0.13888889rem;
-}
-.branding_wrap li:nth-of-type(1) dd a {
-  margin-top: 0.19444444rem;
+  margin-top: 0.1rem;
 }
 .branding_wrap li:nth-of-type(2) dd {
-  width: 1.43333333rem;
+  width: 1.46111111rem;
   padding-right: 0.23333333rem;
 }
 .branding_wrap li:nth-of-type(2) dd div {
@@ -1112,8 +1117,16 @@ body {
   font-size: 0.1rem;
   color: #0066a0;
 }
-.branding_wrap li:nth-of-type(2) dd p {
+.branding_wrap li:nth-of-type(2) dd p:nth-of-type(1) {
   height: 0.2rem;
+  line-height: 0.1rem;
+  font-size: 0.05rem;
+  color: #0066a0;
+  position: relative;
+  letter-spacing: 0.00555556rem;
+}
+.branding_wrap li:nth-of-type(2) dd p:nth-of-type(2) {
+  height: 0.1rem;
   line-height: 0.1rem;
   font-size: 0.05rem;
   color: #0066a0;
@@ -1129,9 +1142,6 @@ body {
   left: -0.04166667rem;
   top: -0.01388889rem;
 }
-.branding_wrap li:nth-of-type(2) dd a {
-  margin-top: 0rem;
-}
 .branding_wrap li:nth-of-type(3) dd {
   width: 1.43333333rem;
   padding-left: 0.23333333rem;
@@ -1143,13 +1153,13 @@ body {
   font-size: 0.1rem;
   color: #0066a0;
 }
-.branding_wrap li:nth-of-type(3) dd p:nth-of-type(n+2) {
-  height: 0.2rem;
+.branding_wrap li:nth-of-type(3) dd p:nth-of-type(2) {
+  height: 0.3rem;
   line-height: 0.1rem;
   font-size: 0.05rem;
   color: #0066a0;
   position: relative;
-  letter-spacing: 0.00277778rem;
+  letter-spacing: 1px;
 }
 .branding_wrap li:nth-of-type(3) dd p:nth-of-type(1) {
   height: 0.11111111rem;
@@ -1157,7 +1167,15 @@ body {
   font-size: 0.06666667rem;
   color: #0066a0;
   position: relative;
-  letter-spacing: 0.00277778rem;
+  letter-spacing: 1px;
+}
+.branding_wrap li:nth-of-type(3) dd p:nth-of-type(3) {
+  height: 0.2rem;
+  line-height: 0.1rem;
+  font-size: 0.05rem;
+  color: #0066a0;
+  position: relative;
+  letter-spacing: 1px;
 }
 .branding_wrap li:nth-of-type(3) dd b {
   width: 0.02222222rem;
@@ -1179,7 +1197,15 @@ body {
   font-size: 0.1rem;
   color: #0066a0;
 }
-.branding_wrap li:nth-of-type(4) dd p {
+.branding_wrap li:nth-of-type(4) dd p:nth-of-type(1) {
+  height: 0.1rem;
+  line-height: 0.1rem;
+  font-size: 0.05rem;
+  color: #0066a0;
+  position: relative;
+  letter-spacing: 0.00555556rem;
+}
+.branding_wrap li:nth-of-type(4) dd p:nth-of-type(2) {
   height: 0.2rem;
   line-height: 0.1rem;
   font-size: 0.05rem;
@@ -1195,9 +1221,6 @@ body {
   position: absolute;
   left: -0.04166667rem;
   top: -0.01388889rem;
-}
-.branding_wrap li:nth-of-type(4) dd a {
-  margin-top: 0.13888889rem;
 }
 #gameContent {
   width: 100vw;
@@ -1743,7 +1766,7 @@ body {
 }
 .ecommerce_wrap {
   width: 100%;
-  height: 5.22222222rem;
+  height: 5.17777778rem;
   position: relative;
   overflow: hidden;
   border-bottom: 0.01388889rem solid #e79131;
@@ -1781,11 +1804,11 @@ body {
   position: absolute;
   top: 0.40555556rem;
   left: 2.24444444rem;
-  letter-spacing: 0.00277778rem;
+  letter-spacing: 1px;
 }
 .ecommerce_wrap h3:nth-of-type(2) {
   top: 2.04444444rem;
-  left: 2.27777778rem;
+  left: 2.08333333rem;
 }
 .ecommerce_advantage {
   width: 100%;
@@ -1851,33 +1874,39 @@ body {
 }
 .ecommerce_channel {
   width: 3.33333333rem;
-  height: 2.35555556rem;
+  height: 2.37777778rem;
   position: absolute;
   left: 1rem;
   right: 1rem;
   top: 2.33333333rem;
+  overflow: hidden;
 }
 .ecommerce_channel dt {
   width: 2.04166667rem;
-  height: 2.36666667rem;
+  height: 2.87777778rem;
   float: left;
   position: relative;
   overflow: hidden;
+  margin-top: -0.22222222rem;
 }
 .ecommerce_channel dt img {
   position: absolute;
   left: 0;
   top: 0;
   display: none;
+  width: 100%;
 }
 .ecommerce_channel dt img {
   width: 100%;
 }
 .ecommerce_channel dd {
   width: 1.11111111rem;
-  height: 0.39444444rem;
+  height: 0.36666667rem;
   float: right;
   position: relative;
+}
+.ecommerce_channel dd:nth-of-type(4) {
+  height: 0.13888889rem;
 }
 .ecommerce_channel dd div {
   width: 0.22222222rem;
@@ -2834,9 +2863,10 @@ body {
 }
 .google_business {
   width: 3.33333333rem;
-  height: 2.16666667rem;
+  height: 1.88888889rem;
   margin: 0 1rem;
   position: relative;
+  overflow: hidden;
 }
 .google_business h2 {
   font-size: 0.1rem;

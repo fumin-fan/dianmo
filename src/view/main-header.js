@@ -63,7 +63,7 @@ function MainHeader(props) {
         <Link to='/jobs'>公司招聘</Link>
       </Menu.Item>
       <Menu.Item>
-        <Link to='/about'>联系我们</Link>
+        <Link to='/contactUs'>联系我们</Link>
       </Menu.Item>
     </Menu>
   );
@@ -114,7 +114,7 @@ function MainHeader(props) {
                     </Menu.Item>
                     <Menu.Item key="2">
                       <Dropdown overlay={solutionsMenu} placement="bottomLeft">
-                        <Button><Link to='/solutions'>广告解决方案</Link><DownOutlined /></Button>
+                        <Button><Link to='/#'>广告解决方案</Link><DownOutlined /></Button>
                       </Dropdown>
                     </Menu.Item>
                     <Menu.Item key="3">

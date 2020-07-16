@@ -30,6 +30,8 @@ body{
     font-size: 16/@r;  
 }
 
+
+
 #header{
     width: 1200/@r;
     height: 15vh;
@@ -140,7 +142,7 @@ body{
     left: 0;
 }
 .next{
-    right: 0;
+    right: 17/@r;
 }
 .on{
     font-weight: bold;
@@ -959,7 +961,8 @@ body{
 }
 .branding_wrap .branding_line{
     width: 44/@r;
-    height: 3/@r;
+    height: 3px;
+    
     background-color:#0066a0;
     position: absolute;
     top:120/@r;
@@ -1016,8 +1019,16 @@ body{
     font-size: 36/@r;
     color: #0066a0;
 }
-.branding_wrap li:nth-of-type(1) dd p{
+.branding_wrap li:nth-of-type(1) dd p:nth-of-type(1){
     height: 36/@r;
+    line-height: 36/@r;
+    font-size: 18/@r;
+    color: #0066a0;
+    position: relative;
+    letter-spacing: 1/@r;
+}
+.branding_wrap li:nth-of-type(1) dd p:nth-of-type(2){
+    height: 72/@r;
     line-height: 36/@r;
     font-size: 18/@r;
     color: #0066a0;
@@ -1044,13 +1055,10 @@ body{
     line-height: 38/@r;
     text-align: center;
     letter-spacing: 4/@r;
-    margin-top: 50/@r;
-}
-.branding_wrap li:nth-of-type(1) dd a{
-    margin-top: 70/@r;
+    margin-top: 36/@r;
 }
 .branding_wrap li:nth-of-type(2) dd{
-    width: 516/@r;
+    width: 526/@r;
     padding-right: 84/@r;
 }
 .branding_wrap li:nth-of-type(2) dd div{
@@ -1060,8 +1068,16 @@ body{
     font-size: 36/@r;
     color: #0066a0;
 }
-.branding_wrap li:nth-of-type(2) dd p{
+.branding_wrap li:nth-of-type(2) dd p:nth-of-type(1){
     height: 72/@r;
+    line-height: 36/@r;
+    font-size: 18/@r;
+    color: #0066a0;
+    position: relative;
+    letter-spacing: 2/@r;
+}
+.branding_wrap li:nth-of-type(2) dd p:nth-of-type(2){
+    height: 36/@r;
     line-height: 36/@r;
     font-size: 18/@r;
     color: #0066a0;
@@ -1078,9 +1094,6 @@ body{
     top: -5/@r;
     
 }
-.branding_wrap li:nth-of-type(2) dd a{
-    margin-top: 0/@r;
-}
 .branding_wrap li:nth-of-type(3) dd{
     width: 516/@r;
     padding-left: 84/@r;
@@ -1092,13 +1105,13 @@ body{
     font-size: 36/@r;
     color: #0066a0;
 }
-.branding_wrap li:nth-of-type(3) dd p:nth-of-type(n+2){
-    height: 72/@r;
+.branding_wrap li:nth-of-type(3) dd p:nth-of-type(2){
+    height: 108/@r;
     line-height: 36/@r;
     font-size: 18/@r;
     color: #0066a0;
     position: relative;
-    letter-spacing: 1/@r;
+    letter-spacing: 1px;
 }
 .branding_wrap li:nth-of-type(3) dd p:nth-of-type(1){
     height: 40/@r;
@@ -1106,7 +1119,15 @@ body{
     font-size: 24/@r;
     color: #0066a0;
     position: relative;
-    letter-spacing: 1/@r;
+    letter-spacing: 1px;
+}
+.branding_wrap li:nth-of-type(3) dd p:nth-of-type(3){
+    height: 72/@r;
+    line-height: 36/@r;
+    font-size: 18/@r;
+    color: #0066a0;
+    position: relative;
+    letter-spacing: 1px;
 }
 .branding_wrap li:nth-of-type(3) dd b{
     width: 8/@r;
@@ -1128,7 +1149,15 @@ body{
     font-size: 36/@r;
     color: #0066a0;
 }
-.branding_wrap li:nth-of-type(4) dd p{
+.branding_wrap li:nth-of-type(4) dd p:nth-of-type(1){
+    height: 36/@r;
+    line-height: 36/@r;
+    font-size: 18/@r;
+    color: #0066a0;
+    position: relative;
+    letter-spacing: 2/@r;
+}
+.branding_wrap li:nth-of-type(4) dd p:nth-of-type(2){
     height: 72/@r;
     line-height: 36/@r;
     font-size: 18/@r;
@@ -1146,9 +1175,7 @@ body{
     top: -5/@r;
     
 }
-.branding_wrap li:nth-of-type(4) dd a{
-    margin-top: 50/@r;
-}
+
 //游戏推广布局
 #gameContent{
     width: 100vw; 
@@ -1554,7 +1581,7 @@ body{
 }
 .ecommerce_wrap{
     width: 100%;
-    height: 1880/@r;
+    height: 1864/@r;
     position: relative;
     overflow: hidden;
     border-bottom:5/@r solid #e79131 ;
@@ -1591,11 +1618,11 @@ body{
     position: absolute;
     top:146/@r;
     left: 808/@r;
-    letter-spacing: 1/@r;
+    letter-spacing: 1px;
 }
 .ecommerce_wrap h3:nth-of-type(2){
     top: 736/@r;
-    left: 820/@r;
+    left: 750/@r;
 }
 .ecommerce_advantage{
     width: 100%;
@@ -1661,34 +1688,40 @@ body{
 }
 .ecommerce_channel{
     width: 1200/@r;
-    height: 848/@r;
+    height: 856/@r;
     position: absolute;
     left: 360/@r;
     right:360/@r ;
     top: 840/@r;
+    overflow: hidden;
 
 }
 .ecommerce_channel dt{
     width: 735/@r;
-    height: 852/@r;
+    height: 1036/@r;
     float: left;
     position: relative;
     overflow: hidden;
+    margin-top: -80/@r;
 }
 .ecommerce_channel dt img{
     position: absolute;
     left: 0;
     top: 0;
     display: none;
+    width: 100%;
 }
 .ecommerce_channel  dt img{
     width: 100%;
 }
 .ecommerce_channel dd{
 width: 400/@r;
-height: 142/@r;
+height: 132/@r;
 float: right;
 position: relative;
+}
+.ecommerce_channel dd:nth-of-type(4){
+    height: 50/@r;
 }
 .ecommerce_channel dd div{
     width:80/@r ;
@@ -2577,9 +2610,10 @@ position: relative;
 }
 .google_business{
     width: 1200/@r;
-    height: 780/@r;
+    height: 680/@r;
     margin: 0 360/@r; 
     position: relative;
+    overflow: hidden;
 }
 .google_business h2{
     font-size: 36/@r;

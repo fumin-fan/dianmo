@@ -1,7 +1,7 @@
 import React from "react";
 import {Switch,Route,Redirect} from "react-router-dom";
 import Home from "../view/home/home";
-import Solutions from "../view/solutions/solutions";
+import ContactUs from "../view/contactUs/contactUs";
 // import Media from "../view/media/media";
 // import News from "../view/news/news";
 import About from "../view/about/about";
@@ -23,7 +23,7 @@ export default function RouterIndex(){
             <Switch>
                 <Route path="/" exact render={()=>(<Redirect to="/index" />)}/>
                 <Route path="/index" component={Home}/>
-                <Route path="/solutions" component={Solutions}/>
+                <Route path="/contactUs" component={ContactUs}/>
                 {/* <Route path="/media" component={Media} />
                 <Route path="/news" component={News}/> */}
                 <Route path="/about" component={About}/>

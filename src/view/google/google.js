@@ -124,9 +124,9 @@ export default function Google(){
                      className="google_business"
                      style={{
                         backgroundImage:`url(${map})`,
-                        backgroundPosition:`0 27.18%`,
+                        backgroundPosition:`6.25% 100%`,
                         backgroundRepeat:`no-repeat`,
-                        backgroundSize:'65.75% 58.85%'  
+                        backgroundSize:'65.75% 67.5%'  
                     }}
                 >
                     <h2>全球流量覆盖</h2> 

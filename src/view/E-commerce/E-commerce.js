@@ -9,10 +9,10 @@ import pic3 from '../img/game/pic3.png';
 import pic4 from '../img/game/pic4.png';
 import ecommerce_more from '../img/game/more.png';
 import channel_content from '../img/ecommerce/channel_content.png';
-import channe2_content from '../img/ecommerce/channel2_content.png';
-import channe4_content from '../img/ecommerce/channel4_content.png';
-import channe5_content from '../img/ecommerce/channel5_content.png';
-import channe6_content from '../img/ecommerce/channel6_content.png';
+import channe2_content from '../img/ecommerce/channel2_content.jpg';
+import channe4_content from '../img/ecommerce/channel4_content.jpg';
+import channe5_content from '../img/ecommerce/channel5_content.jpg';
+import channe6_content from '../img/ecommerce/channel6_content.jpg';
 import trangle from '../img/ecommerce/trangle.png';
 import channel_1 from '../img/ecommerce/1.png';
 import channel_2 from '../img/ecommerce/2.jpg';
@@ -173,6 +173,7 @@ export default function Ecommerce(){
                         <img src={trangle} alt="1" />
                         <span>腾讯广告（原广点通）</span>
                     </dd>
+                    <dd></dd>
                     <dd>
                         <div
                             style={{

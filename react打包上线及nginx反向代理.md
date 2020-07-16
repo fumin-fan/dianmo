@@ -41,66 +41,92 @@
 
 11. 去阿里云服务器里添加上80端口的安全规则，然后通过公网IP就可以直接看到Nginx的欢迎界面了。
 
-12. ```html
-    阿里云的安全组配置
-    
-    如果你使用的是阿里云，记得到ECS实例一下打开端口。
-    
-    步骤如下：
-    
-    1.进入阿里云控制台，并找到ECS实例。
-    2.点击实例后边的“更多”
-    3.点击“网络和安全组” ，再点击“安全组配置”
-    4.右上角添加“安全组配置”
-    5.进行80端口的设置
+![image-20200713181955161](C:\Users\10850\AppData\Roaming\Typora\typora-user-images\image-20200713181955161.png)
+
+1. ```html
+   阿里云的安全组配置
+   
+   如果你使用的是阿里云，记得到ECS实例一下打开端口。
+   
+   步骤如下：
+   
+   
+   
+   1.进入阿里云控制台，并找到ECS实例。 i-8vb6fzvzjg9hu4kz450t
+   2.点击实例后边的“更多”
+   3.点击“网络和安全组” ，再点击“安全组配置”
+   4.右上角添加“安全组配置”
+   5.进行80端口的设置
+   ```
+
+2. 把build后的文件传到服务器上
+
+3. windows用户强力推荐`winscp`来进行操作，非常方便,用这个`winscp`，可以直接将文件拖到服务器上。 winscp下载地址：百度搜索，免费的
+
+4. 文件可以上传到/usr/local/react/dianmo  目录下
+
+5. 配置nginx
+
+6. ```
+   cd /etc/nginx  进入文件
+    ls查看
+    两个非常重要的：1. nginx.conf 文件是Nginx总配置文件，在我们搭建服务器时经常调整的文件。 vim nginx.conf查看或修改
+    2.cd conf.d 进入文件夹，里面有default.conf默认配置文件
+   ```
+
+7. ```js
+    cd conf.d文件夹vim dianmo.conf , 在里面创建服务器配置文件dianmo.conf
     ```
 
-13. 把build后的文件传到服务器上
+   
 
-14. windows用户强力推荐`winscp`来进行操作，非常方便,用这个`winscp`，可以直接将文件拖到服务器上。 winscp下载地址：百度搜索，免费的
+   server {
+       listen      80;
+       server_name 39.99.156.214;  //注释：如果只是存储本地数据，那么只需要localhost即可，如果要服务器返回数据，要写ip地址。
 
-15. 文件可以上传到/usr/local/react/dianmo  目录下
+       location /dianmo {
+           root    /usr/local/react;
+           index   index.html;
+           try_files   $uri /dianmo/index.html;
+       }
+       
+     location ~.*(js|css|png|gif|jpg|mp3|ogg)$ {
+           root /usr/local/react/dianmo/;
+   }
+       
+   }
 
-16. 配置nginx
+```tex
+server {
+    listen      8081;
+    server_name localhost; 
 
-17. ```
-    cd /etc/nginx  进入文件
-     ls查看
-     两个非常重要的：1. nginx.conf 文件是Nginx总配置文件，在我们搭建服务器时经常调整的文件。 vim nginx.conf查看或修改
-     2.cd conf.d 进入文件夹，里面有default.conf默认配置文件
-    ```
-
-18. ```js
-     cd conf.d文件夹vim dianmo.conf , 在里面创建服务器配置文件dianmo.conf
-    
-    
-    
-    server {
-        listen      80;
-        server_name 39.99.156.214;  //注释：如果只是存储本地数据，那么只需要localhost即可，如果要服务器返回数据，要写ip地址。
-    
-        location /dianmo {
-            root    /usr/local/react;
-            index   index.html;
-            try_files   $uri /dianmo/index.html;
-        }
-    
-      location ~.*(js|css|png|gif|jpg|mp3|ogg)$ {
-            root /usr/local/react/dianmo/;
+    location /iGoMovie {
+        root    /usr/local/react;
+        index   index.html;
+        try_files   $uri /iGoMovie/index.html;
     }
-        
-    }
-    ```
 
-19. 配置好之后，重载一下nginx配置 
+  location ~.*(js|css|png|gif|jpg|mp3|ogg)$ {
+        root /usr/local/react/iGoMovie/;
+	}
+    
+}
+```
 
-20. ```
-    nginx -s reload
-    ```
 
-21. 浏览器访问访问`http://ip:port/dianmo`即可
 
-22. ```javascript
+   ```
+
+8. 配置好之后，重载一下nginx配置 
+
+9. ```
+   nginx -s reload
+   ```
+
+10. 浏览器访问访问`http://ip:port/dianmo`即可
+
+11. ```javascript
     具体参考资料
     https://blog.csdn.net/qq799028706/article/details/94463559
     

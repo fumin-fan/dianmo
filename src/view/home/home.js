@@ -84,12 +84,14 @@ useEffect( () =>{
         clearInterval(timer);
     },function(){
         $(this).removeClass('on');
-        $next.addClass('on');
         timer = setInterval(toRun, 3000);
     })
     $next.hover(function(){
+        $prev.removeClass('on');
+        $(this).addClass('on');
         clearInterval(timer);
     },function(){
+        $(this).removeClass('on');
         timer = setInterval(toRun, 3000);
     })
     
@@ -145,7 +147,7 @@ useEffect( () =>{
                         <li><img src={home_banner_3} alt="home_banner图" /></li>
                     </ul>
                     <div className="prev">&lt;</div>
-                    <div className="next on">&gt;</div>
+                    <div className="next">&gt;</div>
                     <span className="active"></span>
                     <span></span>
                     <span></span>
