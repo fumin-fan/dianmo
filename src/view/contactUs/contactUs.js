@@ -17,6 +17,19 @@ export default function Solutions(){
         let $solutionsBanner = $('.solutionsBanner');
         $solutionsBanner.css('height', '85vh');
 
+        /* window.location.hash = window.decodeURIComponent(window.location.hash);
+        const scrollToAnchor = () => {
+          const hashParts = window.location.hash.split('#');
+          if (hashParts.length > 2) {
+            const hash = hashParts.slice(-1)[0];
+            document.querySelector(`#${hash}`).scrollIntoView();
+          }
+        };
+        scrollToAnchor();
+        window.onhashchange = scrollToAnchor; */
+
+
+
         let $oUl = $('.contactUs_wrap ul');
         let $aLiUl = $oUl.find('li');
         let $oOl = $('.contactUs_wrap ol');
@@ -46,7 +59,8 @@ export default function Solutions(){
             <div className="solutionsBanner">
                 <img src={solutions_banner} alt="banner图" />
             </div>
-            <div className="solutions_wrap">
+            
+            <div className="solutions_wrap" id="here">
                 <div className="information_wrap">
                     <div className="information_wrap_l fl">
                         <h3>仅一步, <br />触达您的全球用户</h3>

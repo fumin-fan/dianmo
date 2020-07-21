@@ -22,7 +22,12 @@ import toutiao_jpg from '../img/home/toutiao.jpg';
 import toutiao_png from '../img/home/toutiao.png';
 import tiktok_jpg from '../img/home/tiktok.jpg';
 import tiktok_png from '../img/home/tiktok.png';
-import newsPic from '../img/home/newsPic.jpg';
+import newsPic_1 from '../img/home/newsPic_1.jpg';
+import newsPic_2 from '../img/home/newsPic_2.jpg';
+import newsPic_3 from '../img/home/newsPic_3.jpg';
+import newsPic_4 from '../img/home/newsPic_4.jpg';
+import newsPic_5 from '../img/home/newsPic_5.jpg';
+import newsPic_6 from '../img/home/newsPic_6.jpg';
 import more from '../img/home/more.png';
 import Form from '../shareComponent/form';
 import canlendar from '../img/canlendar.png';
@@ -193,8 +198,10 @@ useEffect( () =>{
                         <li>
                             <div className="more" style={{
                                 backgroundImage:`url(${dot})`,
-                                backgroundPosition:`center center`,
-                                backgroundRepeat:`no-repeat`   
+                                backgroundPosition:`center 45%`,
+                                backgroundRepeat:`no-repeat`,
+                                backgroundSize:'22%'
+
                             }}></div>
                         </li>
                     </ul>
@@ -237,8 +244,9 @@ useEffect( () =>{
                         <li>
                             <div className="more" style={{
                                 backgroundImage:`url(${dot})`,
-                                backgroundPosition:`center center`,
-                                backgroundRepeat:`no-repeat`   
+                                backgroundPosition:`center 50%`,
+                                backgroundRepeat:`no-repeat`,
+                                backgroundSize:'30%' 
                             }}></div>
                         </li>    
                     </ul>
@@ -248,64 +256,64 @@ useEffect( () =>{
                     <h3>行业动态、公司新闻、媒体互动、你想看的都在这里</h3>
                     <ul>
                         <li>
-                            <img src={newsPic} alt="newsPic" />
+                            <img src={newsPic_1} alt="newsPic" />
                             <span style={{
                                 backgroundImage:`url(${canlendar})`,
                                 backgroundPosition:`0 center`,
                                 backgroundRepeat:`no-repeat`,
                                 backgroundSize:'auto 60%'   
-                            }}>2020-5-25</span>
-                            <p>这是一段新闻概述，可能要写二排哦，也能只有一排，最多显示二排,如果写不下就...</p>
+                            }}>2020-6-17</span>
+                            <p>线上活动| “重拳出击”，中重度游戏出海无忧.Adjust应用大数据揭秘以及中重度游戏出海买量渠道及广告投放策略</p>
                         </li>
                         <li>
-                            <img src={newsPic} alt="newsPic" />
+                            <img src={newsPic_2} alt="newsPic" />
+                            <span style={{
+                                backgroundImage:`url(${canlendar})`,
+                                backgroundPosition:`0 center`,
+                                backgroundRepeat:`no-repeat`,
+                                backgroundSize:'auto 60%'    
+                            }}>2019-12-11</span>
+                            <p>12月11日下午，点摩广告携手Google举办的探寻国内流量新机遇大会在北京万达文华酒店举办，现场邀请了一百多位对谷歌国内流量感兴趣的观众前来参会，</p>
+                        </li>
+                        <li>
+                            <img src={newsPic_3} alt="newsPic" />
                             <span style={{
                                 backgroundImage:`url(${canlendar})`,
                                 backgroundPosition:`0 center`,
                                 backgroundRepeat:`no-repeat`,
                                 backgroundSize:'auto 60%'    
                             }}>2020-5-25</span>
-                            <p>防范化解重大疫情和突发公共卫生风险，事关国家安全和发展，事关社会政治大局稳定,新冠肺炎疫情暴发以来，湖北人民、武汉人民为疫情防控作出了重大贡献</p>
+                            <p>营销环境：作为解决用户日常上网场景各类问题和需求的互联网实用工具，其已经进入存量市场，用户普及度较高，加上用户粘性较低，用户转化较难，盈利变现较弱等特征，促使其在营销上也面临着增长乏力、预算不足</p>
                         </li>
                         <li>
-                            <img src={newsPic} alt="newsPic" />
-                            <span style={{
-                                backgroundImage:`url(${canlendar})`,
-                                backgroundPosition:`0 center`,
-                                backgroundRepeat:`no-repeat`,
-                                backgroundSize:'auto 60%'    
-                            }}>2020-5-25</span>
-                            <p>现在，出门佩戴口罩、垃圾分类投放、保持社交距离、推广分餐公筷、看病网上预约等，正在悄然成为良好社会风尚。这些健康文明的做法要推广开来、坚持下去</p>
-                        </li>
-                        <li>
-                            <img src={newsPic} alt="newsPic" />
+                            <img src={newsPic_4} alt="newsPic" />
                             <span style={{
                                 backgroundImage:`url(${canlendar})`,
                                 backgroundPosition:`0 center`,
                                 backgroundRepeat:`no-repeat` ,
                                 backgroundSize:'auto 60%'   
-                            }}>2020-5-25</span>
-                            <p>这是一段新闻概述，可能要写二排哦，也能只有一排，最多显示二排,如果写不下就...</p>
+                            }}>2019-12-31</span>
+                            <p>2019年，全球APP下载量创下了2040亿次的新纪录，其中购物App下载量超过54亿次，同比增长20%；同时日均使用购物App时长持续增加，新兴市场的增加尤为明显，如印度尼西亚增长了70%以上</p>
                         </li>
                         <li>
-                            <img src={newsPic} alt="newsPic" />
+                            <img src={newsPic_5} alt="newsPic" />
                             <span style={{
                                 backgroundImage:`url(${canlendar})`,
                                 backgroundPosition:`0 center`,
                                 backgroundRepeat:`no-repeat`,
                                 backgroundSize:'auto 60%'    
-                            }}>2020-5-25</span>
-                            <p>这是一段新闻概述，可能要写二排哦，也能只有一排，最多显示二排,如果写不下就...</p>
+                            }}>2020-7-20</span>
+                            <p>点摩5周年| 躬身入局，创无限可能. 5年，不忘初心，爱心足迹踏南走北。沟通、交流、协作、创新，把一切的想法变为无限可能...</p>
                         </li>
                         <li>
-                            <img src={newsPic} alt="newsPic" />
+                            <img src={newsPic_6} alt="newsPic" />
                             <span style={{
                                 backgroundImage:`url(${canlendar})`,
                                 backgroundPosition:`0 center`,
                                 backgroundRepeat:`no-repeat`,
                                 backgroundSize:'auto 60%'    
-                            }}>2020-5-25</span>
-                            <p>这是一段新闻概述，可能要写二排哦，也能只有一排，最多显示二排,如果写不下就...</p>
+                            }}>2020-1-15</span>
+                            <p>热水塘小学，地处云南元阳县山区，交通不便，生活条件艰苦。目前，该校共有54名学生，都来自哈尼族。秋冬将至，心系贫困山区孩子的冷暖与学习，点摩人全体化身爱心义工，筹备了一场点摩爱心助学公益活动</p>
                         </li> 
                     </ul>
                     <Link className="moreNews" to=''><img src={more}  alt="more" /></Link>

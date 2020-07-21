@@ -10,9 +10,10 @@ import pic4 from '../img/game/pic4.png';
 import ecommerce_more from '../img/game/more.png';
 import channel_content from '../img/ecommerce/channel_content.png';
 import channe2_content from '../img/ecommerce/channel2_content.jpg';
+import channe3_content from '../img/ecommerce/channel3_content.png';
 import channe4_content from '../img/ecommerce/channel4_content.jpg';
 import channe5_content from '../img/ecommerce/channel5_content.jpg';
-import channe6_content from '../img/ecommerce/channel6_content.jpg';
+import channe6_content from '../img/ecommerce/channel6_content.png';
 import trangle from '../img/ecommerce/trangle.png';
 import channel_1 from '../img/ecommerce/1.png';
 import channel_2 from '../img/ecommerce/2.jpg';
@@ -132,7 +133,7 @@ export default function Ecommerce(){
                     <dt>
                         <img style={{display: "block"}} src={channel_content} alt="1" />
                         <img src={channe2_content} alt="1" />
-                        <img src={channel_content} alt="1" />
+                        <img src={channe3_content} alt="1" />
                         <img src={channe4_content} alt="1" />
                         <img src={channe5_content} alt="1" />
                         <img src={channe6_content} alt="1" />
@@ -143,7 +144,7 @@ export default function Ecommerce(){
                                 backgroundImage:`url(${channel_1})`,
                                 backgroundPosition:`center center`,
                                 backgroundRepeat:`no-repeat`,
-                                backgroundSize:'80%'
+                                backgroundSize:'60%'
                             }}
                         ></div>
                         <img src={trangle} alt="1" />
@@ -155,7 +156,7 @@ export default function Ecommerce(){
                                 backgroundImage:`url(${channel_2})`,
                                 backgroundPosition:`center center`,
                                 backgroundRepeat:`no-repeat`,
-                                backgroundSize:'80%'
+                                backgroundSize:'60%'
                             }}
                         ></div>
                         <img src={trangle} alt="1" />
@@ -167,7 +168,7 @@ export default function Ecommerce(){
                                 backgroundImage:`url(${channel_3})`,
                                 backgroundPosition:`center center`,
                                 backgroundRepeat:`no-repeat`,
-                                backgroundSize:'80%'
+                                backgroundSize:'60%'
                             }}
                         ></div>
                         <img src={trangle} alt="1" />
@@ -180,7 +181,7 @@ export default function Ecommerce(){
                                 backgroundImage:`url(${channel_4})`,
                                 backgroundPosition:`center center`,
                                 backgroundRepeat:`no-repeat`,
-                                backgroundSize:'80%'
+                                backgroundSize:'60%'
                             }}
                         ></div>
                         <img src={trangle} alt="1" />
@@ -192,7 +193,7 @@ export default function Ecommerce(){
                                 backgroundImage:`url(${channel_5})`,
                                 backgroundPosition:`center center`,
                                 backgroundRepeat:`no-repeat`,
-                                backgroundSize:'80%'
+                                backgroundSize:'60%'
                             }}
                         ></div>
                         <img src={trangle} alt="1" />
@@ -204,7 +205,7 @@ export default function Ecommerce(){
                                 backgroundImage:`url(${channel_6})`,
                                 backgroundPosition:`center center`,
                                 backgroundRepeat:`no-repeat`,
-                                backgroundSize:'80%'
+                                backgroundSize:'60%'
                             }}
                         ></div>
                         <img src={trangle} alt="1" />

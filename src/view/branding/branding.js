@@ -53,7 +53,6 @@ export default function Branding(){
                             <dt><img src={pic3} alt="1" /></dt>
                             <dd>
                                 <div>社群营销</div>
-                                <p>高质量内容营销，使效益提升至最佳化</p>
                                 <p><b>.</b>在Facebook、Instagram、Twitter、Tiktok等海内外主流社交媒体平台，进行创意内容营销，增强用户品牌粘度</p>
                                 <p><b>.</b>有效增加目标受众对品牌的信心与好感度，<br />积累品牌的美誉度与信任度</p>
                                 <Link to='#'>了解更多</Link>

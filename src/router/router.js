@@ -3,7 +3,8 @@ import {Switch,Route,Redirect} from "react-router-dom";
 import Home from "../view/home/home";
 import ContactUs from "../view/contactUs/contactUs";
 // import Media from "../view/media/media";
-// import News from "../view/news/news";
+import News from "../view/news/news";
+import Artical from "../view/artical/artical";
 import About from "../view/about/about";
 /* import EnglishHome from "../view/englishHome/englishHome"; */
 import Branding from "../view/branding/branding";
@@ -24,8 +25,9 @@ export default function RouterIndex(){
                 <Route path="/" exact render={()=>(<Redirect to="/index" />)}/>
                 <Route path="/index" component={Home}/>
                 <Route path="/contactUs" component={ContactUs}/>
-                {/* <Route path="/media" component={Media} />
-                <Route path="/news" component={News}/> */}
+                {/* <Route path="/media" component={Media} />*/}
+                <Route path="/news" component={News}/> 
+                <Route path="/artical" component={Artical}/> 
                 <Route path="/about" component={About}/>
                 {/* <Route path="/englishHome" component={EnglishHome}/> */}
                 <Route path="/branding" component={Branding}/>

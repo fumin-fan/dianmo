@@ -63,7 +63,7 @@ function MainHeader(props) {
         <Link to='/jobs'>公司招聘</Link>
       </Menu.Item>
       <Menu.Item>
-        <Link to='/contactUs'>联系我们</Link>
+        <Link to='/contactUs#here'>联系我们</Link>
       </Menu.Item>
     </Menu>
   );
@@ -96,11 +96,11 @@ function MainHeader(props) {
   let {dispatch} = props;
     useEffect(() =>{
 
-     $('#nav').find('a:last').on('click', function(){
+     /* $('#nav').find('a:last').on('click', function(){
        
       dispatch({type:'english'})
       
-     }) 
+     })  */
   }, [dispatch]);
         return (
             <div id="header">
@@ -124,7 +124,7 @@ function MainHeader(props) {
                     </Menu.Item>
                     <Menu.Item key="4">
                       <Dropdown overlay={newsMenu} placement="bottomLeft">
-                        <Button><Link to='#'>最新资讯</Link><DownOutlined /></Button>
+                        <Button><Link to='/news'>最新资讯</Link><DownOutlined /></Button>
                       </Dropdown>
                     </Menu.Item>
                     <Menu.Item key="5">
@@ -134,7 +134,7 @@ function MainHeader(props) {
                       </Menu.Item>
                     <Menu.Item key="6">
                       <Dropdown overlay={languageMenu} placement="bottomLeft">
-                        <Button><Link to='/'>语言</Link><DownOutlined /></Button>
+                        <Button><Link to='#'>语言</Link><DownOutlined /></Button>
                       </Dropdown>
                     </Menu.Item>
                 </Menu>
