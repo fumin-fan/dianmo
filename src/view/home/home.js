@@ -261,9 +261,9 @@ useEffect( () =>{
                                 backgroundImage:`url(${canlendar})`,
                                 backgroundPosition:`0 center`,
                                 backgroundRepeat:`no-repeat`,
-                                backgroundSize:'auto 60%'   
-                            }}>2020-6-17</span>
-                            <p>线上活动| “重拳出击”，中重度游戏出海无忧.Adjust应用大数据揭秘以及中重度游戏出海买量渠道及广告投放策略</p>
+                                backgroundSize:'auto 60%'    
+                            }} >线上活动| “重拳出击”，中重度游戏出海无忧</span>
+                            <p>直播内容:1. Adjust2020应用趋势报告解析;2. Adjust只是一个追踪工具？如何通过Adjust实现更有效的线上推广</p>
                         </li>
                         <li>
                             <img src={newsPic_2} alt="newsPic" />
@@ -272,7 +272,7 @@ useEffect( () =>{
                                 backgroundPosition:`0 center`,
                                 backgroundRepeat:`no-repeat`,
                                 backgroundSize:'auto 60%'    
-                            }}>2019-12-11</span>
+                            }}>携手Google-探寻国内流量新机遇</span>
                             <p>12月11日下午，点摩广告携手Google举办的探寻国内流量新机遇大会在北京万达文华酒店举办，现场邀请了一百多位对谷歌国内流量感兴趣的观众前来参会，</p>
                         </li>
                         <li>
@@ -282,7 +282,7 @@ useEffect( () =>{
                                 backgroundPosition:`0 center`,
                                 backgroundRepeat:`no-repeat`,
                                 backgroundSize:'auto 60%'    
-                            }}>2020-5-25</span>
+                            }}>2019中国互联网实用工具营销策略报告</span>
                             <p>营销环境：作为解决用户日常上网场景各类问题和需求的互联网实用工具，其已经进入存量市场，用户普及度较高，加上用户粘性较低，用户转化较难，盈利变现较弱等特征，促使其在营销上也面临着增长乏力、预算不足</p>
                         </li>
                         <li>
@@ -292,7 +292,7 @@ useEffect( () =>{
                                 backgroundPosition:`0 center`,
                                 backgroundRepeat:`no-repeat` ,
                                 backgroundSize:'auto 60%'   
-                            }}>2019-12-31</span>
+                            }}>乘风破浪| 全球电子商务发展状况</span>
                             <p>2019年，全球APP下载量创下了2040亿次的新纪录，其中购物App下载量超过54亿次，同比增长20%；同时日均使用购物App时长持续增加，新兴市场的增加尤为明显，如印度尼西亚增长了70%以上</p>
                         </li>
                         <li>
@@ -302,8 +302,8 @@ useEffect( () =>{
                                 backgroundPosition:`0 center`,
                                 backgroundRepeat:`no-repeat`,
                                 backgroundSize:'auto 60%'    
-                            }}>2020-7-20</span>
-                            <p>点摩5周年| 躬身入局，创无限可能. 5年，不忘初心，爱心足迹踏南走北。沟通、交流、协作、创新，把一切的想法变为无限可能...</p>
+                            }}>点摩5周年| 躬身入局，创无限可能</span>
+                            <p>5年，瞬息万变，5年，不进则退;从单一到多元,从天真到成熟；5年，不忘初心，爱心足迹踏南走北。沟通、交流、协作、创新，把一切的想法变为无限可能...</p>
                         </li>
                         <li>
                             <img src={newsPic_6} alt="newsPic" />
@@ -312,7 +312,7 @@ useEffect( () =>{
                                 backgroundPosition:`0 center`,
                                 backgroundRepeat:`no-repeat`,
                                 backgroundSize:'auto 60%'    
-                            }}>2020-1-15</span>
+                            }}>十月小春好| 第四届点摩爱心助学公益暨公司团建活动圆满结束</span>
                             <p>热水塘小学，地处云南元阳县山区，交通不便，生活条件艰苦。目前，该校共有54名学生，都来自哈尼族。秋冬将至，心系贫困山区孩子的冷暖与学习，点摩人全体化身爱心义工，筹备了一场点摩爱心助学公益活动</p>
                         </li> 
                     </ul>

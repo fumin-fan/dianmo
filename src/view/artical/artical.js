@@ -64,7 +64,7 @@ export default function Artical(){
                     <img className="artical_pic5" src={artical_5} alt="" />
                 </div>
                 <div className="artical_bottom">
-                    <Link to="/news">返回列表</Link>
+                    <Link to="/news/industryInfo">返回列表</Link>
                     <Link to="#">上一篇</Link>
                     <Link to="#">下一篇</Link>
                 </div>

@@ -4,7 +4,6 @@ import {Link} from "react-router-dom";
 import { Menu, Dropdown, Button} from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import logo from  './img/logo.png';
-import $ from  'jquery';
 
 function MainHeader(props) {
    const solutionsMenu =(
@@ -70,13 +69,13 @@ function MainHeader(props) {
   const newsMenu = (
     <Menu>
       <Menu.Item>
-        <Link to='#'>行业资讯</Link>
+        <Link to='/news/industryInfo' >行业资讯</Link>
       </Menu.Item>
       <Menu.Item>
-        <Link to='#'>媒体新闻</Link>
+        <Link to='/news/mediaInfo'>媒体新闻</Link>
       </Menu.Item>
       <Menu.Item>
-        <Link to='#'>公司动态</Link>
+        <Link to='/news/companyInfo'>公司动态</Link>
       </Menu.Item>
     </Menu>
   );
@@ -124,7 +123,7 @@ function MainHeader(props) {
                     </Menu.Item>
                     <Menu.Item key="4">
                       <Dropdown overlay={newsMenu} placement="bottomLeft">
-                        <Button><Link to='/news'>最新资讯</Link><DownOutlined /></Button>
+                        <Button><Link to='/news/industryInfo' display="industryInfo">最新资讯</Link><DownOutlined /></Button>
                       </Dropdown>
                     </Menu.Item>
                     <Menu.Item key="5">

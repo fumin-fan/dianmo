@@ -391,10 +391,14 @@ body{
     display: block;
     width: 390/@r;
     height: 0.1rem;
-    font-size: 0.038889rem;
-    color: #434343;
+    font-size: 18/@r;
+    color: #555;
+    font-weight: 700;
     line-height: 0.1rem;
     text-indent: 0.080556rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .news li p{
     width: 390/@r;
@@ -3482,11 +3486,16 @@ margin-top: 5px;
     float: left;
 }
 .news_wrap li dd h2{
-    height: 36/@r;
-    line-height: 36/@r;
+    width: 670/@r;
+    height: 120/@r;
     font-size: 36/@r;
     color:#666666;
     padding:38/@r 0 30/@r;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 !important;
+    box-sizing: border-box;
 }
 .news_wrap li dd em{
     font-size: 22/@r;

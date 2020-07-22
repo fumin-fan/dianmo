@@ -26,7 +26,7 @@ export default function RouterIndex(){
                 <Route path="/index" component={Home}/>
                 <Route path="/contactUs" component={ContactUs}/>
                 {/* <Route path="/media" component={Media} />*/}
-                <Route path="/news" component={News}/> 
+                <Route path="/news" component={News} /> 
                 <Route path="/artical" component={Artical}/> 
                 <Route path="/about" component={About}/>
                 {/* <Route path="/englishHome" component={EnglishHome}/> */}
