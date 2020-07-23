@@ -4,6 +4,8 @@ import $ from  'jquery';
 import home_banner_1 from  '../img/home/home_banner_1.jpg';
 import home_banner_2 from  '../img/home/home_banner_2.jpg';
 import home_banner_3 from  '../img/home/home_banner_3.jpg';
+import home_banner_4 from  '../img/home/home_banner_4.jpg';
+import home_banner_5 from  '../img/home/home_banner_5.jpg';
 import box1 from  '../img/home/box1.jpg';
 import box2 from  '../img/home/box2.jpg';
 import box3 from  '../img/home/box3.jpg';
@@ -148,8 +150,8 @@ useEffect( () =>{
                         <li><img src={home_banner_1} alt="home_banner图" /></li>
                         <li><img src={home_banner_2} alt="home_banner图" /></li>
                         <li><img src={home_banner_3} alt="home_banner图" /></li>
-                        <li><img src={home_banner_2} alt="home_banner图" /></li>
-                        <li><img src={home_banner_3} alt="home_banner图" /></li>
+                        <li><img src={home_banner_4} alt="home_banner图" /></li>
+                        <li><img src={home_banner_5} alt="home_banner图" /></li>
                     </ul>
                     <div className="prev">&lt;</div>
                     <div className="next">&gt;</div>
