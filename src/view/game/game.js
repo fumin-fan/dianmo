@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {Link} from "react-router-dom";
 import $ from  'jquery';
-import game_banner from  '../img/home/home_banner_1.jpg';
+import game_banner from  '../img/game/game_banner.jpg';
 import server_content from '../img/game/server_content.jpg';
 import pic1_small from '../img/game/pic1_small.png';
 import pic2 from '../img/game/pic2.png';

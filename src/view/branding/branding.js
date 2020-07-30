@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import $ from  'jquery';
-import branding_banner  from  '../img/home/home_banner_1.jpg';
+import branding_banner  from  '../img/branding/branding_banner.jpg';
 import pic1 from '../img/branding/pic1.jpg';
 import pic2 from '../img/branding/pic2.jpg';
 import pic3 from '../img/branding/pic3.jpg';

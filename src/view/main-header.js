@@ -87,9 +87,9 @@ function MainHeader(props) {
       <Menu.Item>
         <Link to='#'>中文简体</Link>
       </Menu.Item>
-      <Menu.Item>
+      {/* <Menu.Item>
         <Link to='#'>英语</Link>
-      </Menu.Item>
+      </Menu.Item> */}
     </Menu>
   );
   let {dispatch} = props;

@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import $ from  'jquery';
-import solutions_banner from '../img/solutions/solutions_banner.jpg';
+import solutions_banner from  '../img/solutions/solutions_banner.jpg';
 import Form from '../shareComponent/form';
 import friends from '../img/solutions/friends.jpg';
 import address from '../img/solutions/home.png';

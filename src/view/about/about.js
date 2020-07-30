@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import {Link} from "react-router-dom";
 import $ from  'jquery';
+import about_banner from  '../img/about/about_banner.jpg';
 import bg from '../img/about/bg.jpg';
 import span_bg from '../img/about/span_bg.jpg';
 import dot from '../img/about/dot.png';
@@ -22,6 +23,10 @@ import pig5 from '../img/about/5.jpg';
 
 export default function About(){
     useEffect( () =>{
+
+        let $aboutContentBanner = $('.aboutContent_banner');
+        $aboutContentBanner.css('height', '85vh');
+
         let $aInput = $('.about_wrap').find('input');
         let $aSpan = $aInput.next('span');
         $aSpan.on('click', function(){
@@ -280,10 +285,7 @@ export default function About(){
     return (
         <section id="aboutContent">
             <div className="aboutContent_banner">
-                <h2>关于点摩</h2>
-                <div className="about_line"></div>
-                <p>点摩（上海）网络科技有限公司（CLICKSMOBI MEDIA LIMITED）是一站式互联网广告整合营销方案解决商。<br />我们立足全球市场，客户覆盖游戏、电商、工具应用等行业；我们拥有覆盖全球多个地区的丰富渠道资源，以及多年Google、Facebook、Twitter、InMobi、Line、Tiktok、今日头条、UC Ads等海内外主流媒体实际投放经验，能帮助广告主提供效果为导向的广告优化及策略制定，大幅降低广告主出海成本，提高出海成功率。
-                    <br /><br />我们在北京、上海、广州、成都、苏州都设有办事处，并拥有植根行业多年的优化、媒介、销售、AM、设计和网红团队为广告主提供专业广告服务。</p>
+                 <img src={about_banner} alt="banner图" />
             </div>
             <ul 
                 className="about_wish"

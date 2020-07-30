@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {Link} from "react-router-dom";
 import $ from  'jquery';
-import CreativeShortVideo_banner from '../img/home/home_banner_2.jpg';
+import CreativeShortVideo_banner from '../img/CreativeShortVideo/CreativeShortVideo_banner.jpg';
 import start from '../img/CreativeShortVideo/start.png';
 import title from '../img/CreativeShortVideo/title.png';
 import pic_1 from '../img/CreativeShortVideo/pic-1.jpg';
@@ -10,7 +10,7 @@ import pic_3 from '../img/CreativeShortVideo/pic-3.jpg';
 import pic_4 from '../img/CreativeShortVideo/pic-4.jpg';
 import pic_5 from '../img/CreativeShortVideo/pic-5.jpg';
 import pic_6 from '../img/CreativeShortVideo/pic-6.jpg';
-import pic_7 from '../img/CreativeShortVideo/pic-7.jpg';
+import video from '../img/CreativeShortVideo/video.mp4';
 import more from '../img/CreativeShortVideo/more.png';
 import big5 from '../img/CreativeShortVideo/big5.png';
 import p1 from '../img/CreativeShortVideo/p1.jpg';
@@ -115,7 +115,9 @@ export default function CreativeShortVideo(){
                         <Link to="#" className="more"><img src={more} alt="" /></Link>
                         <Link to="#" className="more"><img src={more} alt="" /></Link>
                         <div className="CreativeShortVideo_pic_wrap2">
-                            <img src={pic_7} alt="1" />
+                            <video src={video} controls="controls">
+                                your browser does not support the video tag
+                            </video>
                         </div>
                         <div className="CreativeShortVideo_pic_wrap3"
                              style={{

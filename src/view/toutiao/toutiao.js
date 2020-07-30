@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import {Link} from "react-router-dom";
+import toutiao_banner from '../img/toutiao/toutiao_banner.jpg';
 import PlatformAdvantage from '../shareComponent/platformAdvantage';
 import DianmoAd from '../shareComponent/dianmoAd';
 import $ from  'jquery';
@@ -21,7 +22,8 @@ export default function Toutiao(){
     return (
         <section id="toutiaoContent">
             <div className="toutiao_banner">
-            <p>发挥字节跳动大数据优势，基于600T+的海量用户画像，对用户行为特征进行动态分析、深度建模，智能化呈现用户真实状态及兴趣偏好。积累丰富的定向体系，帮助您准确识别目标人群，让他们看见您的推广，成为您的客户。</p>
+            <img src={toutiao_banner} alt="banner图" />
+            {/* <p>发挥字节跳动大数据优势，基于600T+的海量用户画像，对用户行为特征进行动态分析、深度建模，智能化呈现用户真实状态及兴趣偏好。积累丰富的定向体系，帮助您准确识别目标人群，让他们看见您的推广，成为您的客户。</p> */}
             </div>
             <div className="toutiao_wrap">
                 <PlatformAdvantage content="toutiao" />
